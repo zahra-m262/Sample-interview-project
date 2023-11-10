@@ -1,0 +1,118 @@
+/* for Nav tag and condition*/ /*نشان دادن محتویات منوی همبرگر*/
+.nav-menu {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: -200%;
+  z-index: 1000;
+  padding: 0 2rem;
+  width: 16rem;
+  height: 70vh;
+  transition: all 0.5s;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  @media (max-width: 426px) {
+    width: 12rem;
+  }
+
+  @media (max-width: 321px) {
+    width: 9rem;
+  }
+}
+
+.nav-menu.active {
+  right: 0;
+  transition: all 0.3s;
+}
+
+/*Close Icon style */
+.close-icon {
+  position: absolute;
+  top: 6%;
+  left: 15%;
+  color: var(--btn-bg);
+  font-size: 4rem;
+}
+
+/*validation part style*/
+.validation-section-hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.hamburger-sing-in {
+  color: var(--text-color);
+  margin-right: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hamburger-start-btn {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  background-color: var(--btn-bg);
+  outline: none;
+  border: none;
+  border-radius: 0.15rem;
+  cursor: pointer;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 321px) {
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+}
+
+/* Menu Items style*/
+.hamburger-menu-container {
+  list-style: none;
+}
+
+.hamburger-menu-item {
+  padding: 1rem 0;
+  font-size: 1.25rem;
+  transition: all 0.2s;
+
+  &:hover {
+    letter-spacing: 0.2rem;
+  }
+
+  @media (max-width: 321px) {
+    font-size: 1rem;
+  }
+}
+
+.hamburger-menu-item-link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* hamburger Menu style*/
+.hamburger-icon {
+  position: absolute;
+  top: 6%;
+  right: 6%;
+  font-size: 2rem;
+  color: var(--btn-bg);
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+
+  @media (max-width: 426px) {
+    font-size: 3.5rem;
+  }
+}

@@ -1,0 +1,42 @@
+.picture-container {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+
+  @media (max-width: 769px) {
+    margin-top: 0.5rem;
+  }
+}
+
+.left-pic {
+  margin-right: 2rem;
+  width: 45%;
+  height: 15rem;
+
+  @media (max-width: 769px) {
+    width: 40%;
+    height: 12rem;
+  }
+  @media (max-width: 426px) {
+    margin-right: 1rem;
+  }
+
+  @media (max-width: 321px) {
+    height: 11rem;
+  }
+}
+
+.right-pic {
+  width: 45%;
+  height: 15rem;
+
+  @media (max-width: 769px) {
+    width: 40%;
+    height: 12rem;
+  }
+
+  @media (max-width: 321px) {
+    height: 10.99rem;
+  }
+}

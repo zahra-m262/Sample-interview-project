@@ -1,0 +1,101 @@
+.header-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 4rem;
+
+  @media (max-width: 426px) {
+    margin: 2.5rem 1rem;
+  }
+}
+
+/*about logo and Name of site*/
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: var(--first-text-color);
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+
+  @media (max-width: 426px) {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+#res{
+  @media (max-width: 321px) {
+    font-size: 1rem;
+  }
+
+}
+
+/*about Menu*/
+
+.list-menu {
+  @media (max-width: 769px) {
+    display: none;
+  }
+}
+
+.menu-section {
+  display: flex;
+  list-style: none;
+
+  .menu-item {
+    margin: 0 0.5rem;
+  }
+
+  .menu-item-link {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+}
+
+/*about Validation */
+
+.validation-section {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 769px) {
+    display: none;
+  }
+
+  .sing-in {
+    color: var(--text-color);
+    margin-right: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .start-btn {
+    padding: 0.8rem 1.25rem;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: var(--btn-bg);
+    outline: none;
+    border: none;
+    border-radius: 0.15rem;
+    cursor: pointer;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 1024px) {
+      padding: 0.6rem 1rem;
+    }
+  }
+}
